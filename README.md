@@ -22,7 +22,7 @@ Este proyecto es una aplicación de gestión de tareas construida con React y Su
 2. Crea un nuevo proyecto.
 3. En la sección "Database", crea una nueva tabla para las tareas. Puedes usar el siguiente código SQL:
 ```sql
-CREATE TABLE task (
+CREATE TABLE tasks (
   id SERIAL PRIMARY KEY,
   title VARCHAR(255) NOT NULL,
   description TEXT,
