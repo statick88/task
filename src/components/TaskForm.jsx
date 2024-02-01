@@ -9,7 +9,7 @@ const TaskForm = ({ supabase }) => {
     e.preventDefault();
     if (!title.trim()) return;
     try {
-      const { error } = await supabase.from('tasks').insert([{ title }]);
+      const { error } = await supabase.from('task').insert([{ title }]);
       if (error) {
         throw error;
       }
