@@ -23,11 +23,11 @@ const TaskForm = ({ supabase }) => {
     <form onSubmit={handleSubmit}>
       <input
         type="text"
-        placeholder="Enter task title"
+        placeholder="Ingrese la Tarea"
         value={title}
         onChange={(e) => setTitle(e.target.value)}
       />
-      <button type="submit">Add Task</button>
+      <button type="submit">Añadir Tarea</button>
     </form>
   );
 };
