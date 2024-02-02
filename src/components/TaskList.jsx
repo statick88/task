@@ -41,8 +41,11 @@ const TaskList = ({ supabase }) => {
       <ul>
         {tasks.map((task) => (
           <li key={task.id}>
-            {task.title}
-            <button onClick={() => deleteTask(task.id)}>Delete</button>
+            <div className='taskList-task'>
+              {task.title}
+              <hr />
+              <button onClick={() => deleteTask(task.id)}>Delete</button>
+            </div>
           </li>
         ))}
       </ul>

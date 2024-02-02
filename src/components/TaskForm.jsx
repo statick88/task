@@ -14,6 +14,7 @@ const TaskForm = ({ supabase }) => {
         throw error;
       }
       setTitle('');
+      window.location.reload(); // para que se actualice despues de agregar
     } catch (error) {
       console.error('Error adding task:', error.message);
     }
@@ -28,6 +29,7 @@ const TaskForm = ({ supabase }) => {
         onChange={(e) => setTitle(e.target.value)}
       />
       <button type="submit">Add Task</button>
+
     </form>
   );
 };
