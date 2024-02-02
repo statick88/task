@@ -13,7 +13,8 @@ export function Login() {
       <img src={googlelogo} className="logo google" alt="React logo" />
       <div className="card">
         <button onClick={signInWithGoogle} >Iniciar con Google</button>
-        <p>Angelo Olmedo</p>
+        <p>Olmedo Angelo</p>
+        <p>Narvaez Jilson</p>
       </div>
       <p className="read-the-docs">
         Supabase implementa todo el poder de PostgreSQL

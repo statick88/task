@@ -21,6 +21,7 @@ export function Home() {
   <div className="card">
     <button onClick={signout} >Cerrar sesión</button>
     <p>Olmedo Angelo</p>
+    <p>Narvaez Jilson</p>
   </div>
   <p className="read-the-docs">
     Supabase implementa todo el poder de PostgreSQL
