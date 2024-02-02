@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+.loader {
+  border: 4px solid #f3f3f3; /* color del borde */
+  border-top: 4px solid #3498db; /* color de la parte superior del borde */
+  border-radius: 50%; /* forma redondeada */
+  width: 30px; /* ancho del loader */
+  height: 30px; /* altura del loader */
+  animation: spin 1s linear infinite; /* animación de rotación */
+  margin: 0 auto; /* centrar horizontalmente */
+  position: absolute; /* posición absoluta */
+  top: 50%; /* centrar verticalmente */
+  left: 50%; /* centrar horizontalmente */
+  transform: translate(-50%, -50%); /* centrar vertical y horizontalmente */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); } /* rotación inicial */
+  100% { transform: rotate(360deg); } /* rotación completa */
+}
