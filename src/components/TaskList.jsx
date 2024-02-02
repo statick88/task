@@ -1,6 +1,7 @@
 // TaskList.jsx
 import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
+import React from 'react';
 
 const TaskList = ({ supabase }) => {
   const [tasks, setTasks] = useState([]);
@@ -37,12 +38,12 @@ const TaskList = ({ supabase }) => {
 
   return (
     <div>
-      <h2>Task List</h2>
+      <h2>Lista de Tareas</h2>
       <ul>
         {tasks.map((task) => (
           <li key={task.id}>
             {task.title}
-            <button onClick={() => deleteTask(task.id)}>Delete</button>
+            <button onClick={() => deleteTask(task.id)}>Eliminar</button>
           </li>
         ))}
       </ul>
