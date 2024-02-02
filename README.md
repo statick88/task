@@ -1,5 +1,5 @@
-# Task Manager
-
+# Task Manager : https://task-xi-plum.vercel.app/
+# G4: Narvaez - Olmedo
 Este proyecto es una aplicación de gestión de tareas construida con React y Supabase.
 
 ## Tecnologías utilizadas
