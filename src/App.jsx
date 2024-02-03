@@ -2,6 +2,7 @@
 import { createClient } from '@supabase/supabase-js';
 import TaskList from './components/TaskList';
 import TaskForm from './components/TaskForm';
+import TaskLogin from './components/TaskLogin';
 import './index.css';
 
 // Configurar el cliente Supabase
@@ -15,6 +16,8 @@ const App = () => {
       <h1>Task Manager</h1>
       <TaskForm supabase={supabase} />
       <TaskList supabase={supabase} />
+      <TaskLogin supabase={supabase} />
+    
     </div>
   );
 };
