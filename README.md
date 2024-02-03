@@ -40,3 +40,16 @@ CREATE TABLE tasks (
 - ❌ Notificaciones por correo electrónico cuando se asigna una tarea.
 - ❌ Filtros para la lista de tareas.
 - ❌ Ruta de tareas completadas: mostrar en una ruta separada las tareas que ya se han realizado.
+
+# INTEGRANTES
+
+-Espinosa Barbara
+-Tinoco Jeimmy
+-Torres Diego
+
+# CAMBIOS
+
+Instalacion de parques: npm install @supabase/supabase-js
+Implementacion de Facebook
+Creacion del componente
+                        
