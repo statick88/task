@@ -50,6 +50,7 @@ CREATE TABLE tasks (
 3. En la pestaña de template email, configura tu mensaje de envio y asunto, luego en configuración extrae el template id
   para usarlo en Correo.jsx.
 4. En la pestaña de Account, extrae la llave publica de usuario para añadirlo en Correo.jsx.
+5. Recuerda instalar la librería en el proyecto con el comando (npm install @emailjs/browser --save)
 
 ## Mejoras futuras
 
