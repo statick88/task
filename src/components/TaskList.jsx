@@ -1,6 +1,8 @@
 // TaskList.jsx
 import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
+//impota el componente de Aut.jsx
+import FacebookLoginButton from './Aut';
 
 const TaskList = ({ supabase }) => {
   const [tasks, setTasks] = useState([]);
@@ -46,9 +48,12 @@ const TaskList = ({ supabase }) => {
           </li>
         ))}
       </ul>
+      <FacebookLoginButton />
     </div>
   );
 };
+
+
 
 TaskList.propTypes = {
   supabase: PropTypes.object.isRequired,
